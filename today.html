@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="plannerScripts.js"></script>
+        <title>Cute Planner</title>
+    </head>
+    <body>
+        <div id = "wrapper">       
+            <div id="planner">
+                <div id="schedule">
+                    <h2 class = "headerTxt">Schedule</h2>
+                    <div id="scheduleFunc">
+                    </div>
+                    <div id="buttonContainer">
+                    <button class = "addThing" id="addEvent" onclick="displayOptions()">+</button>
+                    </div>
+                </div>
+                <div id="rightSide">
+                    <h2 class = "headerTxt">Daily Goals</h2>
+                    <div class="rightContainer" id = "goalContainer">
+                        <div class = "bulletWrapper">
+                            <label class="container">
+                                <input type="checkbox"></input>
+                                <span class="checkmark"></span>
+                                <button class="delButtonBullet" onclick = "this.parentElement.parentElement.remove()">X</button>
+                            </label>
+                            <textarea rows="1" cols = "27" class = "goalText" spellcheck = "false" placeholder="Write your task..."></textarea>
+                        </div>
+                    </div>
+                    <button class = "addThing" onclick = "addBulletPoint('goal')">+</button>
+                    <h2 class = "headerTxt">To-Do</h2>
+                    <div class="rightContainer" id = "todoContainer">
+                        <div class = "bulletWrapper">
+                            <label class="container">
+                                <input type="checkbox"></input>
+                                <span class="checkmark"></span>
+                                <button class="delButtonBullet" onclick = "this.parentElement.parentElement.remove()">X</button>
+                            </label>
+                            <textarea rows="1" cols = "27" class = "goalText" spellcheck = "false" placeholder="Write your task..."></textarea>
+                        </div>
+                    </div>
+                    <button class = "addThing" onclick = "addBulletPoint('task')">+</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
