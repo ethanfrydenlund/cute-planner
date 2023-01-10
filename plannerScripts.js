@@ -165,7 +165,8 @@ function addBulletPoint(location){
     step 2: create label append it to div child
     step 3: create input and append it to container
     step 4: create span and append it to container
-    step 5: create text area and append to div
+    step 5: create text area and append to div'
+    step 6: add delete button
     */
 
     var divChild;
@@ -234,7 +235,4 @@ function deleteEvent(buttonid){
     }
 
     element.removeChild(buttonid.parentNode);
-}
-
-function deleteBulletPoint(){
 }
